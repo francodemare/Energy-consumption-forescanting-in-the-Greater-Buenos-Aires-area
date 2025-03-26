@@ -65,7 +65,3 @@ Se recomienda seguir los siguientes pasos:
 ## Contacto
 
 frandemare@gmail.com
-
-## Licencia
-
-[**Aquí puedes incluir la licencia bajo la cual se distribuye el código, por ejemplo, MIT License.**]
