@@ -1,67 +1,67 @@
-# Predicción del Consumo Energético en la Zona de Gran Buenos Aires
+# Energy Consumption Prediction in the Greater Buenos Aires Area
 
-## Resumen del Trabajo de Tesis de Maestría
+## Master's Thesis Summary
 
-Este repositorio contiene el código que respalda la investigación realizada en la tesis de maestría titulada **"Predicción del consumo energético en la zona de Gran Buenos Aires"**.
+This repository contains the code that supports the research conducted in the master's thesis titled **"Energy Consumption Prediction in the Greater Buenos Aires Area"**.
 
-**Autor:** Franco Ariel Demare
-**Título de la Tesis:** Magister en Inteligencia de Datos orientada a Big Data
-**Director/Codirector:** Prof. Dr. Aurelio F. Bariviera
-**e-mail de contacto del tesista:** frandemare@gmail.com
+**Author:** Franco Ariel Demare
+**Thesis Title:** Master in Data Intelligence oriented to Big Data
+**Supervisor/Co-supervisor:** Prof. Dr. Aurelio F. Bariviera
+**Thesis report:** You can find the complete thesis report Tesis_Predicción del consumo GBA.pdf
+**Author's contact email:** frandemare@gmail.com
 
-## Motivación
+## Motivation
 
-La motivación principal de este trabajo radica en la creciente necesidad de predecir con precisión la demanda de energía eléctrica debido a la rápida expansión económica y el aumento del consumo energético, tanto industrial como doméstico. La predicción precisa del consumo es fundamental para optimizar la gestión de recursos, reducir costos y minimizar el impacto ambiental, en línea con los Objetivos de Desarrollo Sostenible (ODS).
+The main motivation of this work lies in the growing need to accurately predict electricity demand due to rapid economic expansion and increased energy consumption, both industrial and domestic. Accurate consumption prediction is essential to optimize resource management, reduce costs, and minimize environmental impact, in line with the Sustainable Development Goals (SDGs).
 
-## Metodología
+## Methodology
 
-En esta investigación, se exploraron y compararon modelos estadísticos y de aprendizaje automático para la predicción del consumo energético:
+In this research, statistical and machine learning models were explored and compared for energy consumption prediction:
 
-* **Modelos Estadísticos:**
-    * Regresión Lineal
-    * Árboles de Regresión
-    * Modelo Autorregresivo y con media móvil (ARIMA)
-    * Modelo SVM
-* **Modelos de Aprendizaje Automático:**
+* **Statistical Models:**
+    * Linear Regression
+    * Regression Trees
+    * Autoregressive Moving Average (ARIMA) Model
+    * SVM Model
+* **Machine Learning Models:**
     * Long Short-Term Memory (LSTM)
     * Convolutional Neural Network (CNN)
-    * Modelos CNN-LSTM
+    * CNN-LSTM Models
 
+Historical energy consumption data was used to train and evaluate these models, with special attention to the time series nature of the data and **seasonality**. The use of the **Empirical Mode Decomposition (EMD)** technique to improve the performance of the LSTM model by decomposing the time series into intrinsic components is specifically mentioned.
 
-Se utilizaron datos históricos de consumo energético para entrenar y evaluar estos modelos, prestando especial atención a la naturaleza de series temporales de los datos y a la **estacionalidad**. Se menciona específicamente el uso de la técnica de **Descomposición en Modos Empíricos (EMD)** para mejorar el rendimiento del modelo LSTM al descomponer la serie temporal en componentes intrínsecos.
+## Results
 
-## Resultados
+The research concluded with the evaluation of the performance of the different models. The **LSTM model combined with the EMD technique (LSTM-EMD)** proved to be the most effective for energy consumption prediction in the evaluated forecast horizon (201 hourly observations). This model outperformed the predictions made by CAMMESA for the same period.
 
-La investigación concluyó con la evaluación del rendimiento de los diferentes modelos. Se destaca que el modelo **LSTM combinado con la técnica EMD (LSTM-EMD)** demostró ser el más efectivo para la predicción del consumo energético en el horizonte de pronóstico evaluado (201 observaciones horarias). Este modelo superó en precisión a las predicciones realizadas por CAMMESA para el mismo período.
+## Keywords
 
-## Palabras Clave
+Machine learning; Statistical model; Energy consumption; Neural networks; Time series; Prediction.
 
-Aprendizaje automático; Modelo estadístico; Consumo energético; Redes neuronales; Series Temporales; Predicción.
+## Repository Content
 
-## Contenido del Repositorio
+This repository contains the source code developed for the implementation and evaluation of the prediction models described in the thesis. You will find scripts for:
 
-Este repositorio contiene el código fuente desarrollado para la implementación y evaluación de los modelos de predicción descritos en la tesis. Encontrarás scripts para:
+* Data preprocessing and cleaning.
+* Implementation of statistical models.
+* Implementation of machine learning models (including EMD integration with LSTM).
+* Training and evaluation of models using relevant metrics.
+* Visualization of results and comparisons between models.
 
-* Preprocesamiento y limpieza de los datos.
-* Implementación de los modelos estadísticos.
-* Implementación de los modelos de aprendizaje automático (incluyendo la integración de EMD con LSTM).
-* Entrenamiento y evaluación de los modelos utilizando métricas relevantes.
-* Visualización de los resultados y comparativas entre modelos.
+The code is mainly developed in [**Specify the main programming language used, e.g., Python**] and makes use of libraries such as [**List the main libraries used, e.g., pandas, numpy, scikit-learn, TensorFlow, Keras, statsmodels, etc.**].
 
-El código está principalmente desarrollado en [**Aquí deberías especificar el lenguaje de programación principal utilizado, por ejemplo, Python**] y hace uso de librerías como [**Aquí deberías listar las librerías principales utilizadas, por ejemplo, pandas, numpy, scikit-learn, TensorFlow, Keras, statsmodels, etc.**].
+## How to Use
 
-## Cómo Utilizar
+To run the code in this repository, make sure you have a Python environment installed, such as Anaconda or Google Colab.
 
-Para ejecutar el código en este repositorio, asegúrate de tener instalado un entorno python que puede ser en Anaconda o en Google Colab.
+It is recommended to follow these steps:
 
-Se recomienda seguir los siguientes pasos:
+1.  Clone this repository.
+2.  Create a virtual environment (optional) and install the necessary dependencies.
+3.  Run the scripts in the "Visualización de datos diarios" directory to visualize the daily dataset.
+4.  Run the scripts in the "Implementación de modelos con datos diarios" directory to understand the justifications of the thesis.
+5.  Run the scripts in the "Implementación de EMD a modelos LSTM y CNN con datos diarios e intradiarios" directory to see a real use case of the best trained model.
 
-1.  Clonar este repositorio.
-2.  Crear un entorno virtual (opcional) e instalar las dependencias necesarias.
-3.  Ejecutar los scripts que se encuentra dentro de Visualización de datos diarios. Para visualizar los datos del set de datos.
-4.  Ejecutar los scripts que se encuentra dentro de Implementación de modelos con datos diarios. Para entender las justificaciones de la tesis.
-5.  Ejecutar los scripts que se encuentra dentro de Implementación de EMD a modelos LSTM y CNN con datos diarios e intradiarios. Para conocer un caso de uso real del mejor modelo entrenado.
-
-## Contacto
+## Contact
 
 frandemare@gmail.com
