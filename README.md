@@ -48,7 +48,7 @@ This repository contains the source code developed for the implementation and ev
 * Training and evaluation of models using relevant metrics.
 * Visualization of results and comparisons between models.
 
-The code is mainly developed in [**Specify the main programming language used, e.g., Python**] and makes use of libraries such as [**List the main libraries used, e.g., pandas, numpy, scikit-learn, TensorFlow, Keras, statsmodels, etc.**].
+The code is mainly developed in Python and makes use of libraries such as [**pandas, numpy, scikit-learn, TensorFlow, Keras, statsmodels, etc.**].
 
 ## How to Use
 
