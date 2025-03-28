@@ -18,8 +18,6 @@ La motivación principal de este trabajo radica en la creciente necesidad de pre
 En esta investigación, se exploraron y compararon modelos estadísticos y de aprendizaje automático para la predicción del consumo energético:
 
 * **Modelos Estadísticos:**
-    * Regresión Lineal
-    * Árboles de Regresión
     * Modelo Autorregresivo y con media móvil (ARIMA)
     * Modelo SVM
 * **Modelos de Aprendizaje Automático:**
