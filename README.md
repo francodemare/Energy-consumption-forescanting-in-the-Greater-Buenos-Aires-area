@@ -19,8 +19,6 @@ The main motivation of this work lies in the growing need to accurately predict 
 In this research, statistical and machine learning models were explored and compared for energy consumption prediction:
 
 * **Statistical Models:**
-    * Linear Regression
-    * Regression Trees
     * Autoregressive Moving Average (ARIMA) Model
     * SVM Model
 * **Machine Learning Models:**
